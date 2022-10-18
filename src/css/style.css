@@ -273,3 +273,69 @@ li {
 .btn:hover {
     background: #f1c501;
 }
+
+.cars {
+    position: relative;
+    height: 100vh;
+}
+.cars__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 60px 0px;
+    text-align: center;
+}
+.cars__tabs {
+    display: flex;
+    justify-content: center;
+}
+.cars__tab {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.2;
+    border: 1px solid #EBEBEB;
+    cursor: pointer;
+}
+.cars__tab.active {
+    border: 1px solid #FED100
+}
+.cars__blocks {}
+.cars__block {}
+.block-cars {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 1000px;
+    transform: translateX(-50%);
+}
+.block-cars__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 100px 0px 0px;
+}
+.block-cars__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 25px 0px;
+}
+.block-cars__desc li {
+    line-height: 2;
+}
+.block-cars__desc li::before {
+    content: '✔';
+    width: 14px;
+    height: 14px;
+    margin: 0px 15px 0px 0px;
+}
+.block-cars__btn {
+    margin: 30px 0px 0px 0px;
+}
+.blok-cars__img {
+    vertical-align: middle;
+}
