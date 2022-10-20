@@ -276,7 +276,7 @@ li {
 
 .cars {
     position: relative;
-    height: 100vh;
+    height: 900px;
 }
 .cars__title {
     font-family: 'Montserrat';
@@ -338,4 +338,199 @@ li {
 }
 .blok-cars__img {
     vertical-align: middle;
+}
+
+.reviews {
+    background: #FED100;
+    padding: 85px 0px 100px 0px;
+}
+.reviews__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+}
+.reviews__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__block {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.block-reviews {}
+.block-reviews__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 12px 0px;
+}
+.block-reviews__wrap {
+    margin: 0px 0px 20px 0px;
+}
+.block-reviews__wrap svg {
+    vertical-align: middle;
+}
+.block-reviews__date {
+    vertical-align: middle;
+}
+.block-reviews__desc {
+    flex: 1 1 auto;
+    margin: 0px 0px 20px 0px;
+}
+.block-reviews__subtitle {
+    margin: 0px 0px 60px 0px;
+    text-decoration: underline;
+}
+.btn-reviews {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #333333;
+    background: transparent;
+}
+.reviews__btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.main-form {
+    width: 1000px;
+    margin: 100px auto;
+}
+.main-form__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 10px 0px
+}
+.main-form__info {
+    margin: 0px 0px 45px 0px
+}
+.main-form__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.main-form__wrap {}
+.main-form__button {
+    margin: 0px 0px 20px 0px;
+    width: 250px;
+    height: 50px;
+}
+.main-form__button button {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+}
+.main-form__button .button-decor {
+    border: 1px solid #FED100
+}
+.main-form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.main-form__checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.main-form__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    line-height: 1;
+    width: 14px;
+    height: 14px;
+}
+.main-form__checkbox:checked+label::before {
+    content: '✔';
+}
+.main-form__label {}
+
+  
+.main-form__inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.main-form__inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.main-form__inp .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.main-form__inp input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+.main-form__inp input:hover {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+.main-form__inp input:not(:-moz-placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:not(:-ms-input-placeholder) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 0 #FED100;
+}
+.main-form__inp input:focus + .label {
+    color: #FED100;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
 }
