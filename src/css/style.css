@@ -392,6 +392,7 @@ li {
     height: 50px;
     border: 1px solid #333333;
     background: transparent;
+    cursor: pointer;
 }
 .reviews__btn {
     margin: 0 auto;
@@ -533,4 +534,106 @@ li {
 .main-form__inp input:focus + .label + .focus-bg {
     transform: scaleX(1);
     transition: all 0.1s ease;
+}
+
+
+.map {
+    position: relative;
+}
+.map-block {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    padding: 40px 35px;
+    background: white;
+    z-index: 2
+}
+.map-block__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 40px 0px;
+}
+.map-block__info li {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+}
+.map-block__info li::before {
+    content: '✔';
+    width: 14px;
+    height: 14px;
+    color: #FED100;
+    margin: 0px 16px 0px 0px;
+}
+.map-block__info {
+    margin: 0px 0px 57px 0px;
+}
+.map-block__social {
+    width: 160px;
+    margin-left: auto;
+}
+.map-block__social a {
+    margin-right: 25px;
+}
+.map-block__social a:last-child {
+    margin-right: 0px;
+}
+
+.footer {
+    padding: 100px 0px;
+    background: #FED100;;
+}
+.footer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+}
+.footer__main {}
+.main-footer {}
+.main-footer__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 44px 0px;
+}
+.main-footer a {
+    display: inline-block;
+    font-family: 'Montserrat';
+    margin: 0px 0px 36px 0px;
+}
+.footer__nav {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+}
+.footer__nav li {
+    margin: 0px 0px 14px 0px;
+}
+.footer__social svg{
+    margin-right: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer__social svg:last-child{
+    margin-right: 0px;
+}
+.footer__social svg:hover{
+    fill: red;
+}
+.footer__social a {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.footer__info {}
+.footer__phone {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+    text-decoration: underline;
 }
