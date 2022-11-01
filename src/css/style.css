@@ -276,7 +276,7 @@ li {
 
 .cars {
     position: relative;
-    height: 900px;
+    height: 600px;
 }
 .cars__title {
     font-family: 'Montserrat';
@@ -648,6 +648,12 @@ li {
     .process__block {
         width: 430px;
     }
+    .blok-cars__img {
+        width: 430px;
+    }
+    .block-cars {
+        width: 800px;
+    }
 }
 /*burger*/
 
@@ -691,6 +697,22 @@ li {
     .process__blocks {
         justify-content: center;
     }
+    .blok-cars__img {
+        width: 320px;
+    }
+    .block-cars {
+        width: 700px;
+    }
+    .block-cars__desc {
+        display: none;
+    }
+    .block-cars__title {
+        text-align: center;
+        margin: 0;
+    }
+    .cars {
+        height: 400px;
+    }
 }
 @media (max-width:768px) {
     .main__advantage {
@@ -706,6 +728,33 @@ li {
     }
     .block-process__img {
         display: none;
+    }
+    .block-cars {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .block-cars {
+        width: 400px;
+    }
+    .block-cars__wrap {
+        margin: 0;
+    }
+    .cars__tab {
+        border: none;
+    }
+    .cars__tab.active {
+        border: none;
+    }
+    .cars__tab {
+        width: 100%;
+        text-decoration: underline;
+    }
+    .cars__title {
+        margin: 0px 0px 30px 0px
+    }
+    .cars {
+        height: 600px;
     }
 }
 
@@ -730,4 +779,8 @@ li {
         width: 90%;
         margin: 0px 0px 0px 15px;
     }
+    .block-cars {
+        width: 310px;
+    }
+    
 }

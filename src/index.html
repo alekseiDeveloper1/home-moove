@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Home movee</title>
 </head>
 <body>
@@ -96,41 +97,45 @@
             </div>
         </div>
     </section>
-    <!-- <section class="prices">
+    <section class="prices">
         <div class="container">
             <div class="prices__title">Цены</div>
             <div class="prices__subtitle">Фиксированная стоимость на переезд под ключ</div>
-            <div class="prices__blocks">
-                <div class="prices__block block-prices">
-                    <div class="block-prices__title">1-комнатная кв-ра</div>
-                    <ul class="block-prices__desc">
-                        <li>1 фургон</li>
-                        <li>2 грузчика</li>
-                        <li>Переезд за 4 часа</li>
-                    </ul>
-                    <div class="block-prices__price">8 490&#8381;</div>
-                    <button class="block-prices__btn btn">Заказать</button>
+            <div class="prices__blocks swiper">
+                <div class="swiper-wrapper">
+                    <div class="prices__block block-prices swiper-slide">
+                        <div class="block-prices__title">1-комнатная кв-ра</div>
+                        <ul class="block-prices__desc">
+                            <li>1 фургон</li>
+                            <li>2 грузчика</li>
+                            <li>Переезд за 4 часа</li>
+                        </ul>
+                        <div class="block-prices__price">8 490&#8381;</div>
+                        <button class="block-prices__btn btn">Заказать</button>
+                    </div>
+                    <div class="prices__block block-prices swiper-slide">
+                        <div class="block-prices__title">2-комнатная кв-ра</div>
+                        <ul class="block-prices__desc">
+                            <li>1 газель - 3 метра </li>
+                            <li>2 грузчика</li>
+                            <li>Переезд за 4 часа</li>
+                        </ul>
+                        <div class="block-prices__price">10 990&#8381;</div>
+                        <button class="block-prices__btn btn">Заказать</button>
+                    </div>
+                    <div class="prices__block block-prices swiper-slide">
+                        <div class="block-prices__title">3-комнатная кв-ра</div>
+                        <ul class="block-prices__desc">
+                            <li>1 газель - 4 метра</li>
+                            <li>2 грузчика</li>
+                            <li>Переезд за 6 часов</li>
+                        </ul>
+                        <div class="block-prices__price">16 490&#8381;</div>
+                        <button class="block-prices__btn btn">Заказать</button>
+                    </div>
                 </div>
-                <div class="prices__block block-prices">
-                    <div class="block-prices__title">2-комнатная кв-ра</div>
-                    <ul class="block-prices__desc">
-                        <li>1 газель - 3 метра </li>
-                        <li>2 грузчика</li>
-                        <li>Переезд за 4 часа</li>
-                    </ul>
-                    <div class="block-prices__price">10 990&#8381;</div>
-                    <button class="block-prices__btn btn">Заказать</button>
-                </div>
-                <div class="prices__block block-prices">
-                    <div class="block-prices__title">3-комнатная кв-ра</div>
-                    <ul class="block-prices__desc">
-                        <li>1 газель - 4 метра</li>
-                        <li>2 грузчика</li>
-                        <li>Переезд за 6 часов</li>
-                    </ul>
-                    <div class="block-prices__price">16 490&#8381;</div>
-                    <button class="block-prices__btn btn">Заказать</button>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -162,87 +167,91 @@
     <section class="reviews">
         <div class="container">
             <div class="reviews__title">Отзывы</div>
-            <div class="reviews__blocks">
-                <div class="reviews__block block-reviews">
-                    <div class="block-reviews__title">Ирина</div>
-                    <div class="block-reviews__wrap">
-                        <span class="block-reviews__date">24.03.2019</span>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
+            <div class="reviews__blocks swiper swiperTwo">
+                <div class="swiper-wrapper">
+                    <div class="reviews__block block-reviews swiper-slide">
+                        <div class="block-reviews__title">Ирина</div>
+                        <div class="block-reviews__wrap">
+                            <span class="block-reviews__date">24.03.2019</span>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                        </div>
+                        <div class="block-reviews__desc">
+                            Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное...  
+                        </div>
+                        <span class="block-reviews__subtitle">Читать полностью</span>
                     </div>
-                    <div class="block-reviews__desc">
-                        Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное...  
+                    <div class="reviews__block block-reviews swiper-slide">
+                        <div class="block-reviews__title">Светлана Васильевна</div>
+                        <div class="block-reviews__wrap">
+                            <span class="block-reviews__date">13.09.2019</span>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                        </div>
+                        <div class="block-reviews__desc">
+                            Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.Когда....
+                        </div>
+                        <span class="block-reviews__subtitle">Читать полностью</span>
                     </div>
-                    <span class="block-reviews__subtitle">Читать полностью</span>
+                    <div class="reviews__block block-reviews swiper-slide">
+                        <div class="block-reviews__title">Ольга Петрова</div>
+                        <div class="block-reviews__wrap">
+                            <span class="block-reviews__date">11.11.2019</span>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
+                            </svg>
+                        </div>
+                        <div class="block-reviews__desc">
+                            Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особлая благодарность Александру за его...            
+                        </div>
+                        <span class="block-reviews__subtitle">Читать полностью</span>
+                    </div>
                 </div>
-                <div class="reviews__block block-reviews">
-                    <div class="block-reviews__title">Светлана Васильевна</div>
-                    <div class="block-reviews__wrap">
-                        <span class="block-reviews__date">13.09.2019</span>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                    </div>
-                    <div class="block-reviews__desc">
-                        Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.Когда....
-                    </div>
-                    <span class="block-reviews__subtitle">Читать полностью</span>
-                </div>
-                <div class="reviews__block block-reviews">
-                    <div class="block-reviews__title">Ольга Петрова</div>
-                    <div class="block-reviews__wrap">
-                        <span class="block-reviews__date">11.11.2019</span>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#FF352B" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="#EBEBEB" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 6.3H9.275L7.5 0.75L5.725 6.3H0L4.625 9.725L2.875 15.25L7.5 11.825L12.125 15.25L10.35 9.7L15 6.3Z"/>
-                        </svg>
-                    </div>
-                    <div class="block-reviews__desc">
-                        Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особлая благодарность Александру за его...            
-                    </div>
-                    <span class="block-reviews__subtitle">Читать полностью</span>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <button class="reviews__btn btn-reviews">Все отзывы</button>
         </div>
     </section>
-    <form action="#" class="main-form">
+    <!--<form action="#" class="main-form">
         <div class="main-form__title">Закажи  переезд прямо сейчас</div>
         <div class="main-form__info">Мы перезвоним в течении 10 секунд</div>
         <div class="main-form__blocks">
@@ -320,5 +329,70 @@
             </div>
         </div>
     </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            //   direction: 'vertical',
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                // when window width is >= 960px
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        const swiperTwo = new Swiper('.swiperTwo', {
+            // Optional parameters
+            //   direction: 'vertical',
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                // when window width is >= 960px
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+      </script>
 </body>
 </html>
