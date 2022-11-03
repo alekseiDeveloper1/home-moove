@@ -470,6 +470,7 @@ li {
     max-width: 280px;
     border-radius: 3px;
     overflow: hidden;
+    padding: 0px 0px 20px 0px;
 }
 .main-form__inp .label {
     position: absolute;
@@ -588,10 +589,14 @@ li {
 .footer-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "main nav social info";
     gap: 100px;
 }
 .footer__main {}
-.main-footer {}
+.main-footer {
+    grid-area: main;
+}
 .main-footer__title {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -607,9 +612,13 @@ li {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 20px;
+    grid-area: nav;
 }
 .footer__nav li {
     margin: 0px 0px 14px 0px;
+}
+.footer__social {
+    grid-area: social;
 }
 .footer__social svg{
     margin-right: 30px;
@@ -628,7 +637,9 @@ li {
     font-size: 20px;
     text-decoration: underline;
 }
-.footer__info {}
+.footer__info {
+    grid-area: info;
+}
 .footer__phone {
     text-align: center;
     font-family: 'Montserrat';
@@ -653,6 +664,15 @@ li {
     }
     .block-cars {
         width: 800px;
+    }
+    .map-block {
+        left: 100px;
+    }
+    .footer-row {
+        grid-template-areas:
+            "main nav"
+            "social info";
+        grid-template-columns: auto;
     }
 }
 /*burger*/
@@ -713,6 +733,19 @@ li {
     .cars {
         height: 400px;
     }
+    .main-form {
+        width: 90%;
+
+    }
+    .main-form__blocks {
+        flex-wrap: wrap;
+    }
+    .main-form__inp {
+        margin-left: 0;
+    }
+    .map-block {
+        left: 50px;
+    }
 }
 @media (max-width:768px) {
     .main__advantage {
@@ -756,6 +789,20 @@ li {
     .cars {
         height: 600px;
     }
+    .map-block {
+        display: none;
+    }
+    .footer-row {
+        grid-template-areas:
+            "main"
+            "nav"
+            "social"
+            "info";
+        grid-template-columns: auto;
+    }
+    .footer__phone {
+        text-align: left;
+    }
 }
 
 @media (max-width:576px) {
@@ -782,5 +829,29 @@ li {
     .block-cars {
         width: 310px;
     }
-    
+    .main-form__blocks {
+        justify-content: center;
+    }
+    .main-form__inp {
+        margin: 0;
+    }
+    .main-form {
+        text-align: center;
+    }
+    .map-block {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-row {
+        justify-items: center;
+        gap: 50px;
+    }
+    .footer__social svg {
+        margin: 15px 20px;
+    }
+    .footer__phone {
+        text-align: center;
+    }
 }
