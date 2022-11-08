@@ -231,6 +231,7 @@ li {
     margin: 0px 0px 60px 0px;
 }
 .prices__blocks {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -647,6 +648,24 @@ li {
     font-size: 20px;
     margin-top: 5px;
     text-decoration: underline;
+}
+
+.prices__button-prev {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    font-size: 100px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.prices__button-next {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    font-size: 100px;
+    color: dodgerblue;
+    cursor: pointer;
 }
 
 @media (max-width:1200px) {
