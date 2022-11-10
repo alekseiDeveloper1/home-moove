@@ -308,11 +308,16 @@ li {
 .cars__blocks {}
 .cars__block {}
 .block-cars {
+    transition: 1s;
     position: absolute;
-    top: 150px;
+    top: 170px;
     left: 50%;
     width: 1000px;
     transform: translateX(-50%);
+    opacity: 0;
+}
+.block-cars.active {
+    opacity: 1;
 }
 .block-cars__wrap {
     display: inline-block;
@@ -338,6 +343,9 @@ li {
     margin: 30px 0px 0px 0px;
 }
 .blok-cars__img {
+    width: 640px;
+    height: 400px;
+    object-fit: cover;
     vertical-align: middle;
 }
 
