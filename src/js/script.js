@@ -62,3 +62,28 @@ tabWrap.addEventListener('click', (e) => {
     });
   }
 });
+
+// Render
+
+const processBlocks = document.querySelector('.process__blocks');
+
+
+
+const render = (data) => {
+  data.map((item) => {
+    const element = document.createElement('div');
+    element.classList.add('process__block', 'block-process');
+    element.innerHTML = `
+      <img src="${item.img}" alt="three" class="block-process__img">
+      <div class="block-process__wrap">
+          <div class="block-process__title">${item.title}</div>
+          <div class="block-process__desc">${item.desc}</div>
+      </div>
+    `;
+    processBlocks.append(element);
+  });
+};
+
+fetch('http://localhost:3000/data')
+  .then((data) => data.json())
+  .then((res) => render(res));
