@@ -1,35 +1,104 @@
 'use strict';
 
 //slider
+// imperative
+// const slides = document.querySelectorAll('.prices__block'),
+//   prev = document.querySelector('.prices__button-prev'),
+//   next = document.querySelector('.prices__button-next');
+
+// let index = 1;
+
+// const updateSlider = (n) => {
+//   if (n > slides.length) {
+//     index = 1;
+//   }
+//   if (n < 1) {
+//     index = slides.length;
+//   }
+//   slides.forEach((slide) => slide.style.display = 'none');
+//   slides[index - 1].style.display = 'block';
+// };
+// updateSlider(index);
+
+// const changeSlide = (n) => {
+//   index += n;
+//   updateSlider(index);
+// };
+
+// prev.addEventListener('click', () => {
+//   changeSlide(-1);
+// });
+// next.addEventListener('click', () => {
+//   changeSlide(1);
+// });
+
+// func obj
+
+// const slides = document.querySelectorAll('.prices__block'),
+//   prev = document.querySelector('.prices__button-prev'),
+//   next = document.querySelector('.prices__button-next');
+
+// const Slider = (slides, prev, next, index = 1) => ({
+//   slides, prev, next, index,
+//   updateSlider(n) {
+//     if (n > this.slides.length) {
+//       this.index = 1;
+//     }
+//     if (n < 1) {
+//       this.index = this.slides.length;
+//     }
+//     this.slides.forEach((slide) => slide.style.display = 'none');
+//     this.slides[this.index - 1].style.display = 'block';
+//   },
+//   changeSlide(n) {
+//     this.index += n;
+//     this.updateSlider(this.index);
+//   },
+//   emit() {
+//     this.prev.addEventListener('click', () => this.changeSlide(-1));
+//     this.next.addEventListener('click', () => this.changeSlide(1));
+//   }
+// });
+// const newSlider = Slider(slides, prev, next);
+// newSlider.updateSlider(1);
+// newSlider.emit();
+
+// OOP
+
 const slides = document.querySelectorAll('.prices__block'),
   prev = document.querySelector('.prices__button-prev'),
   next = document.querySelector('.prices__button-next');
 
-let index = 1;
-
-const updateSlider = (n) => {
-  if (n > slides.length) {
-    index = 1;
+const Slider = class {
+  constructor(slides, prev, next, index = 1) {
+    this.slides = slides;
+    this.prev = prev;
+    this.next = next;
+    this.index = index;
   }
-  if (n < 1) {
-    index = slides.length;
+  updateSlider(n) {
+    if (n > this.slides.length) {
+      this.index = 1;
+    }
+    if (n < 1) {
+      this.index = this.slides.length;
+    }
+    this.slides.forEach((slide) => slide.style.display = 'none');
+    this.slides[this.index - 1].style.display = 'block';
   }
-  slides.forEach((slide) => slide.style.display = 'none');
-  slides[index - 1].style.display = 'block';
+  changeSlide(n) {
+    this.index += n;
+    this.updateSlider(this.index);
+  }
+  emit() {
+    this.prev.addEventListener('click', () => this.changeSlide(-1));
+    this.next.addEventListener('click', () => this.changeSlide(1));
+  }
 };
-updateSlider(index);
 
-const changeSlide = (n) => {
-  index += n;
-  updateSlider(index);
-};
-
-prev.addEventListener('click', () => {
-  changeSlide(-1);
-});
-next.addEventListener('click', () => {
-  changeSlide(1);
-});
+const newSlider = new Slider(slides, prev, next);
+newSlider.updateSlider(1);
+newSlider.emit();
 
 // tabs
 const tabWrap = document.querySelector('.cars__tabs'),
